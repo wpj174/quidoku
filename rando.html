@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="developer, front end, front-end, back end, back-end, python, sql, mysql, my-sql,database, rdbms, javascript, php"
+    />
+    <meta name="author" content="Bill Johnson" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/q_logo_bo.png" />
+    <!-- Common <head> html ends here -->
+
+    <link rel="stylesheet" href="./css/rando.css" />
+    <title>Quidoku | Rando String Gen</title>
+  </head>
+
+  <body>
+    <!-- Common header begins here -->
+    <header id="page-header">
+      <div class="sticky-container">
+        <div id="branding">
+          <img src="./images/q_logo_bo.png" alt="Quidoku logo" />
+          <h1>
+            <span class="highlight">Quidoku</span> <span>Bill Johnson</span>
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Common header ends here -->
+
+    <div class="rando-wrapper">
+      <div class="rando-intro">
+        <h1>Random Number Generator</h1>
+        <p>
+          This tool will generate a list of random strings. Select and/or adjust
+          the string creation parameters and click the Generate button.
+        </p>
+        <p>
+          Once the list has been created, you can download a text file of the
+          strings by clicking the the Download button.
+        </p>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-pair-wrapper">
+          <label for="list-length">Number of strings to generate</label>
+          <select name="list-length" id="list-length">
+            <option value="1">1</option>
+            <option value="10" selected>10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="500">500</option>
+            <option value="1000">1,000</option>
+            <option value="10000">10,000</option>
+            <option value="100000">100,000</option>
+            <option value="500000">500,000</option>
+            <option value="1000000">1,000,000</option>
+          </select>
+        </div>
+        <div class="input-pair-wrapper">
+          <label for="string-length">Chooose how many random characters:</label>
+          <select name="string-length" id="string-length">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">5</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8" selected>8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+        <h3>Character Pool</h3>
+        <table>
+          <tr>
+            <td>
+              <input type="radio" id="alpha" name="char-type" value="alpha" />
+            </td>
+            <td>
+              <label for="alpha">Alpha Only</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                id="numeric"
+                name="char-type"
+                value="numeric"
+              />
+            </td>
+            <td>
+              <label for="numeric">Numeric Only</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                id="alpha-num"
+                name="char-type"
+                value="alpha-num"
+                checked
+              />
+            </td>
+            <td>
+              <label for="alpha-num">Alpha-Numeric</label>
+            </td>
+          </tr>
+        </table>
+        <div class="input-pair-wrapper">
+          <input type="checkbox" id="spcl-chars" value="true" checked />
+          <label for="spcl-chars">Include Special Characters:</label>
+          <p>~ ! @ # $ % ^ & * - _ = + :</p>
+        </div>
+        <p>Add leading or trailing static text:</p>
+        <div class="input-pair-wrapper">
+          <input type="text" id="leading-text" placeholder="Leading Text" />
+          <input type="text" id="trailing-text" placeholder="Trailing Text" />
+        </div>
+        <button class="make-list-btn">Generate</button>
+      </div>
+      <div class="output-wrapper">
+        <div class="string-list-header">
+          <h2>String List</h2>
+          <button id="btn-download">
+            <a href="" id="download">Download</a>
+          </button>
+        </div>
+        <div class="string-list-wrapper">
+          <ul id="string-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common footer begins here -->
+    <footer>
+      <p>Copyright &copy; 2020 | Quidoku</p>
+    </footer>
+    <!-- Common footer ends here -->
+
+    <script src="./js/rando.js"></script>
+  </body>
+</html>

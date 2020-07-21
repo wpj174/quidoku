@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  /* font: 15px/1.5 Arial, Helvetica, sans-serif; */
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+/* Global */
+.container {
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button_1 {
+  height: 38px;
+  width: 110px;
+  background: #cc5500;
+  border: 0;
+  border-radius: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffcb4d;
+  text-align: center;
+}
+
+.button_1:hover {
+  background: #f8a017;
+  color: #cc5500;
+  font-weight: bold;
+}
+
+.dark {
+  padding: 15px;
+  /* background: #35424a; */
+  background: #ffcb4d;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Header */
+header {
+  height: 60px;
+  width: 100%;
+  background: #0b4385;
+  color: #ffcb4d;
+  padding-top: 15px;
+  position: fixed;
+  top: 0;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #cc5500;
+}
+
+header a {
+  color: #ffcb4d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header li {
+  /* float: left; */
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  display: flex;
+  float: left;
+  display: flex;
+  padding-left: 3vw;
+}
+
+header #branding img {
+  height: 40px;
+  padding: 0 5px;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+  padding-right: 3vw;
+}
+
+header .highlight {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+header .highlight,
+header .current a {
+  color: #cc5500;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #cc5500;
+  font-weight: bold;
+}
+
+.sticky-container {
+  background: #0b4385;
+  color: #ffcb4d;
+  padding-top: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 60px;
+  border-bottom: 3px solid #cc5500;
+}
+
+/* Showcase */
+
+#showcase {
+  min-height: 400px;
+  margin-top: 75px;
+  background: url("../images/showcase.jpg") no-repeat 0 -400px;
+  text-align: center;
+  color: #ffcb4d;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* Newsletter */
+
+#newsletter {
+  padding: 15px;
+  color: #ffcb4d;
+  background: #0b4385;
+  display: flex;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+  padding: 6px 0;
+  height: 25px;
+  width: 250px;
+}
+
+/* Boxes */
+
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes h1,
+#boxes h3 {
+  color: #7d4c00;
+}
+
+#boxes #box-title {
+  text-align: center;
+}
+
+#boxes .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#boxes .box {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+/* Main */
+
+#main {
+  margin-top: 75px;
+}
+
+/* Sidebar */
+
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Main-col */
+
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* Services */
+
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #f8a017 solid 1px;
+  margin-bottom: 5px;
+  background: #ffcb4d;
+}
+
+nav.project-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav.project-nav a {
+  width: 85px;
+  padding: 5px;
+  /* border: 2px black solid; */
+  border-radius: 18px;
+  text-decoration: none;
+  background: #cc5500;
+  color: #ffcb4d;
+  text-align: center;
+}
+
+nav.project-nav a:hover {
+  background: #f8a017;
+  color: #cc5500;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  color: black;
+  background-color: #ffcb4d;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    font-size: smaller;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #newsletter button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

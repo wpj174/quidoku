@@ -1,0 +1,72 @@
+.rando-wrapper {
+  margin-top: 110px;
+}
+
+.rando-intro,
+.input-wrapper,
+.output-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #cc5500;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 20px;
+}
+
+.rando-intro p {
+  text-align: center;
+}
+
+.input-pair-wrapper {
+  display: inline;
+  padding: 10px;
+}
+
+select#list-length {
+  width: 125px;
+}
+
+select#string-length {
+  width: 50px;
+}
+
+.output-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+ul#string-list li {
+  list-style-type: none;
+}
+
+button {
+  width: 160px;
+  height: 38px;
+  background: white;
+  border: 1px solid black;
+  justify-content: center;
+  border-radius: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #cc5500;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
+.string-list-header {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#btn-download {
+  display: none;
+}
+
+button#btn-download a {
+  text-decoration: none;
+  color: #cc5500;
+}
