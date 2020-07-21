@@ -54,7 +54,8 @@ ul {
 header {
   height: 60px;
   width: 100%;
-  background: #0b4385;
+  background-color: whitesmoke;
+  /* background: #0b4385; */
   color: #ffcb4d;
   padding-top: 15px;
   position: fixed;
@@ -63,7 +64,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #cc5500;
+  /* border-bottom: 3px solid #cc5500; */
 }
 
 header a {
@@ -289,6 +290,35 @@ footer {
     float: none;
     text-align: center;
     width: 100%;
+  }
+
+  header #branding {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  header #branding img {
+    height: 30px;
+    padding: 0;
+  }
+
+  header #branding h1 {
+    display: none;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  header nav {
+    padding-right: 0;
+    font-size: smaller;
+  }
+
+  header li {
+    padding: 0 5px 0 5px;
   }
 
   header {
